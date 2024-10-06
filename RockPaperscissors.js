@@ -9,10 +9,12 @@
 // -getComputerChoice will randomly return "rock", "paper", "scissors"
 // -HINT: Math.random() is a function that returns a number between 0 and 1.  You can use this to make random selections.
 // -Once you think you've got this working, test it by console.log(getComputerChoice());
-function getcomputerChoice() {
-   return  
+const options = ["rock","paper","scissors"]
+function getComputerChoice(){
+    const random = options[Math.floor(Math.random) * options.length]
+    return random;
 }
-
+console.log(getComputerChoice());
 
 // Step 3:
 // Create a function called getHumanChoice:
