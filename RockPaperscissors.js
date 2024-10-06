@@ -21,7 +21,11 @@ console.log(getComputerChoice());
 // -Write the code so getHumanChoice returns one of "rock", "paper", or "scissors" based on user input
 // -HINT: prompt() is a function that will allow you to get user input
 // -Once you think you've got this working, test it by console.log(getHumanChoice());
-
+function getHumanChoice(){
+    const choice = prompt("Rock, Paper, or Scissors?")
+    return choice
+}
+console.log(getHumanChoice());
 // Step 4:
 // Score tracking
 // -Create two variables to score human and computer scores
