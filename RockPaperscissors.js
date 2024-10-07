@@ -29,13 +29,13 @@ function getHumanChoice(){
             return choiceInLower;
         }
     }
-console.log(getHumanchoice());
+console.log(getHumanChoice());
 // Step 4:
 // Score tracking
 // -Create two variables to score human and computer scores
 // -initialize these variables with a score of 0
-// let humanScore = 0;
-// let computerScore = 0;
+let humanScore = 0;
+let computerScore = 0;
 // Step 5: 
 // Write the logic to play one game
 // -Create a function called playRound
@@ -43,3 +43,8 @@ console.log(getHumanchoice());
 // -make sure that human choice logic is case-insensitive (rock, RoCK, RocK, ROCK should all work equally well)
 // -Should console.log a message like "You win! Rock beats scissors")
 // -increment the human/computer score based on winner
+function playRound(humanChoice, computerChoice){
+    return getComputerChoice();
+    
+
+}
