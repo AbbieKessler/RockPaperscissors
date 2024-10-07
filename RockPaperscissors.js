@@ -22,15 +22,20 @@ console.log(getComputerChoice());
 // -HINT: prompt() is a function that will allow you to get user input
 // -Once you think you've got this working, test it by console.log(getHumanChoice());
 function getHumanChoice(){
-    const choice = prompt("Rock, Paper, or Scissors?")
-    return choice
-}
-console.log(getHumanChoice());
+        const choice = prompt("Rock, Paper or Scissors?");
+        const choiceInLower = choice.toLowerCase();
+        if (options.includes(choiceInLower)){
+            validatedInput = true;
+            return choiceInLower;
+        }
+    }
+console.log(getHumanchoice());
 // Step 4:
 // Score tracking
 // -Create two variables to score human and computer scores
 // -initialize these variables with a score of 0
-
+// let humanScore = 0;
+// let computerScore = 0;
 // Step 5: 
 // Write the logic to play one game
 // -Create a function called playRound
