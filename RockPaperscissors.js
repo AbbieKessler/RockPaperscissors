@@ -44,7 +44,28 @@ let computerScore = 0;
 // -Should console.log a message like "You win! Rock beats scissors")
 // -increment the human/computer score based on winner
 function playRound(humanChoice, computerChoice){
-    return getComputerChoice();
+    humanchoice == getHumanChoice();
+    computerChoice == getComputerChoice();
+    if (humanChoice == "rock" && computerChoice == "paper"){
+        console.log("You Lose! Paper beats rock.");
+    }
+    if (humanChoice == "paper" && computerChoice == "scissors"){
+        console.log("You Lose! Scissors beat paper.");
+    }
+    if (humanChoice == "scissors" && computerChoice == "rock"){
+        console.log("You Lose! Rock beats scissors.");
+    }
+    if (humanChoice == "paper" && computerChoice == "rock"){
+        console.log("You Win! Paper beats rock.");
+    }
+    if (humanChoice == "scissors" && computerChoice == "paper"){
+        console.log("You Win! Scissors beat paper.");
+    }
+    if (humanChoice == "rock" && computerChoice == "scissors"){
+        console.log("You Win! Rock beats scissors.");
+    }
+    if (humanChoice == computerChoice){
+        console.log("It's a Tie!")
+    }
     
-
-}
+    } 
