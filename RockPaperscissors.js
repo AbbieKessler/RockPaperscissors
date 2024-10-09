@@ -20,13 +20,14 @@ function getComputerChoice(){
         console.log("scissors")
     }
 }
-console.log(getComputerChoice());
+//console.log(getComputerChoice());
 
 // Step 3:
 // Create a function called getHumanChoice:
 // -Write the code so getHumanChoice returns one of "rock", "paper", or "scissors" based on user input
 // -HINT: prompt() is a function that will allow you to get user input
 // -Once you think you've got this working, test it by console.log(getHumanChoice());
+const options = ["rock", "paper", "scissors"]; 
 function getHumanChoice(){
         const choice = prompt("Rock, Paper or Scissors?");
         const choiceInLower = choice.toLowerCase();
@@ -87,4 +88,4 @@ function playRound(humanChoice, computerChoice){
         console.log(humanScore);
         console.log(computerScore);
     }
-} 
+}
