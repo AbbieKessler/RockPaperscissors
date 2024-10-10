@@ -55,33 +55,33 @@ function playRound(humanChoice, computerChoice){
         console.log(computerChoice);
         if (humanChoice == "rock" && computerChoice == "paper"){
             console.log("You Lose! Paper beats rock.");
-            console.log(humanScore);
-            console.log(computerScore + 1);
+            console.log("Your score: ", humanScore);
+            console.log("Computer score: ", computerScore + 1);
         }
         else if (humanChoice == "paper" && computerChoice == "scissors"){
             console.log("You Lose! Scissors beat paper.");
-            console.log(humanScore);
-            console.log(computerScore + 1);
+            console.log("Your score: ", humanScore);
+            console.log("Computer score: ", computerScore + 1);
         }
         else if (humanChoice == "scissors" && computerChoice == "rock"){
             console.log("You Lose! Rock beats scissors.");
-            console.log(humanScore);
-            console.log(computerScore + 1);
+            console.log("Your score: ", humanScore);
+            console.log("Computer score: ", computerScore + 1);
         }
         else if (humanChoice == "paper" && computerChoice == "rock"){
             console.log("You Win! Paper beats rock.");
-            console.log(humanScore + 1);
-            console.log(computerScore);
+            console.log("Your score: ", humanScore + 1);
+            console.log("Computer score: ", computerScore);
         }
         else if (humanChoice == "scissors" && computerChoice == "paper"){
             console.log("You Win! Scissors beat paper.");
-            console.log(humanScore + 1);
-            console.log(computerScore);
+            console.log("Your score: ", humanScore + 1);
+            console.log("Computer score: ", computerScore);
         }
         else if (humanChoice == "rock" && computerChoice == "scissors"){
             console.log("You Win! Rock beats scissors.");
-            console.log(humanScore + 1);
-            console.log(computerScore);
+            console.log("Your score: ", humanScore + 1);
+            console.log("Computer score: ", computerScore);
         }
         else if (humanChoice == computerChoice){
             console.log("It's a Tie!")
